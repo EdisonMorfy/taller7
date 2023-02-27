@@ -55,5 +55,13 @@
         android:layout_y="175dp"
         android:text="MENSAJE DE AVISON 2" />
 
+    <Button
+        android:id="@+id/B7"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_x="46dp"
+        android:layout_y="682dp"
+        android:text="X" />
+
 
 </AbsoluteLayout>

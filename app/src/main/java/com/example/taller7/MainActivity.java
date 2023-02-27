@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button b1, b2,b3,b4,b5,b6;
+    private Button b1, b2,b3,b4,b5,b6,b7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         b4 = (Button) findViewById(R.id.B4);
         b5 = (Button) findViewById(R.id.B5);
         b6 = (Button) findViewById(R.id.B6);
-
+        b7 = (Button) findViewById(R.id.B7);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +84,29 @@ public class MainActivity extends AppCompatActivity {
                 alerta.show();
             }
 
+        });
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alerta = new AlertDialog.Builder(MainActivity.this);
+                alerta.setTitle("AVISO");
+                alerta.setMessage("Desea salir de la aplicación")
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setCancelable(false)
+                        .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                System.exit(0);
+                            }
+                        })
+                        .setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        });
+                alerta.show();
+            }
         });
     }
 }
