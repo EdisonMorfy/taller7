@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:layout_x="40dp"
+        android:layout_y="54dp"
+        android:text="MENSAJE DE AVISO 1" />
+
+    <Button
+        android:id="@+id/B6"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="607dp"
+        android:text="MENSAJE DE ALARMA CON OPCIONES" />
+
+    <Button
+        android:id="@+id/B5"
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:layout_x="40dp"
+        android:layout_y="484dp"
+        android:text=" MENSAJE DE ALARMA CON ICONO" />
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="388dp"
+        android:text="MENSAJE DE ALERTA CON TEXTO" />
+
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:layout_x="40dp"
+        android:layout_y="277dp"
+        android:text="MENSAJE DE BASICO" />
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:layout_x="40dp"
+        android:layout_y="175dp"
+        android:text="MENSAJE DE AVISON 2" />
+
+
+</AbsoluteLayout>
